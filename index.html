@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>City/Weather Search</title>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-  <!-- YOUR CODE HERE -->
-  
+
+<body id="day-mode">
+  <form id="search-form">
+
+    <!-- YOUR CODE HERE -->
+    <div class="container">
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Enter city name" />
+        <button type="submit">Search</button>
+      </div>
+
+      <div class="city">
+        <img src="/images/day.jpg" class="bg-image" id="mode-image" alt="background-image" />
+        <div class="city-info">
+          <h1 class="city-name" id="city-name"></h1>
+          <h2 class="temp" id="temp"></h2>
+        </div>
+      </div>
+
+      <table class="info-table ">
+        <tr>
+          <td>Country</td>
+          <td id="country"></td>
+        </tr>
+        <tr>
+          <td>Timezone</td>
+          <td id="timezone"></td>
+        </tr>
+        <tr>
+          <td>Population</td>
+          <td id="population"></td>
+        </tr>
+        <tr>
+          <td>Tomorrow's Forecast</td>
+          <td id="forecast"></td>
+        </tr>
+      </table>
+
+    </div>
+  </form>
   <script src="./app.js"></script>
 </body>
+
 </html>
